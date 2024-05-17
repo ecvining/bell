@@ -1,0 +1,11 @@
+const BasicLightAndDarkTheme = require('./templates/BasicLightAndDarkTheme')
+const BasicTiming = require('./timings/BasicTiming')
+
+module.exports = BasicLightAndDarkTheme(
+  'Default',
+  BasicTiming,
+  ['rgb(11,89,23)', 'rgb(3,128,22)', 'rgb(3,153,26)', 'rgb(2,199,32)'],
+  {
+    weekend: 'rgb(26,235,102)',
+    holiday: 'rgb(22,219,55)'
+  })
